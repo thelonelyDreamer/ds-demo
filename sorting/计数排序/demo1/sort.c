@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+/*
+* 
+*/ 
 void cmpCountSort(int a[],int b[],int n){
 	int i,j,*count;
 	count=(int *)malloc(sizeof(int)*n);
