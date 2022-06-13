@@ -1,0 +1,9 @@
+int count(Linklist L,Element x){
+	int i=0;
+	while(L!=NULL){
+		if(L->data==x)
+			i++；
+		L=L->next;
+	}
+	return i;
+}	

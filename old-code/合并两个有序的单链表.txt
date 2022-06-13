@@ -1,0 +1,31 @@
+typedef struct LNode{
+	Elemtype data;
+	struct LNode *next;
+}LNode,*LinkList;
+
+//不带头节点
+LinkList mergeLinklist(LinkList L1,LinkList L2){
+	LinkList L=NULl,p=NULL;
+	while(L1!=NULL,L2!=NULL){
+		if(L1-data<L2->data){
+			if(L==NULL)
+				L=p=L1;
+			else{
+				p->next=L1;
+				p=L1;
+				}
+			L1=L1->next
+		else
+			if(L==NULL)
+				L=p=L2;
+			else{
+				p->next=L2;
+				p=L2;
+				}
+			L2=L2->next
+	if(L1==null)
+		s->next=L2;
+	else
+		s->next=L1;
+	return L;
+}

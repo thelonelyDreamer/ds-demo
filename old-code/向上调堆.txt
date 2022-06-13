@@ -1,0 +1,33 @@
+void AdjustUp(ElemType A[],int k){
+	A[0]=a[k];
+	int i=k/2;
+	while(i>0&&A[i]<A[0]){
+		A[k]=A[i];
+		k=i;
+		i=k/2;
+	}
+	A[k]=A[0];
+}
+
+void AdjustUp(ElemType A[],int k){
+	A[0]=a[k];
+	int i=k/2;
+	while(i>0&&A[i]>A[0]){
+		A[k]=A[i];
+		k=i;
+		i=k/2;
+	}
+	A[k]=A[0];
+}
+
+void AdjustUp(ElemType A[],int k){
+	ElemType temp=a[k-1];
+	int i=k/2;
+	while(i>0&&A[i-1]<temp){
+		A[k-1]=A[i-1];
+		k=i;
+		i=k/2;
+	}
+	A[k-1]=temp;
+}
+	+56																																																																								
